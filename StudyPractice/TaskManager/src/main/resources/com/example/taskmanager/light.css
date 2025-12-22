@@ -1,0 +1,76 @@
+.root {
+    -fx-base: #ffffff;
+    -fx-background: #ffffff;
+    -fx-control-inner-background: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.label {
+    -fx-text-fill: black;
+}
+
+.text-field, .text-area, .combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+}
+
+.text-input, .text-area {
+    -fx-prompt-text-fill: #black;
+}
+
+.root.small-font { -fx-font-size: 12px; }
+.root.medium-font { -fx-font-size: 14px; }
+.root.large-font { -fx-font-size: 16px; }
+
+.header {
+    -fx-background-color: #3498db;
+    -fx-alignment: center-left;
+    -fx-padding: 10px;
+}
+.app-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.sidebar {
+    -fx-background-color: #ecf0f1;
+}
+.section-title {
+    -fx-font-weight: bold;
+    -fx-padding: 8px 5px;
+}
+.footer {
+    -fx-background-color: #bdc3c7;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-table-cell-border-color: #ddd;
+}
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+.table-row-cell:selected {
+    -fx-background-color: #d6eaf8;
+}
+.list-cell:selected {
+    -fx-background-color: derive(-fx-control-inner-background, -20%);
+}

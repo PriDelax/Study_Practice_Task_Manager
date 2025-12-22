@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="600.0" maxWidth="800.0" minHeight="400.0" minWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.SettingsController">
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold" text="Настройки приложения" />
+
+    <Label text="Путь к файлу базы данных:" />
+    <HBox spacing="10">
+        <TextField fx:id="dbPathField" editable="false" prefWidth="300" />
+        <Button onAction="#openDbFolder" text="Открыть" />
+    </HBox>
+    <Label text="Приближение окна:" />
+    <HBox spacing="10">
+        <fx:define>
+            <ToggleGroup fx:id="fontGroup" />
+        </fx:define>
+        <RadioButton fx:id="smallFont" text="Маленькое" toggleGroup="$fontGroup" />
+        <RadioButton fx:id="mediumFont" text="Среднее" toggleGroup="$fontGroup" />
+        <RadioButton fx:id="largeFont" text="Большое" toggleGroup="$fontGroup" />
+        <Button onAction="#reset" text="Сбросить" />
+        <Button onAction="#apply" text="Применить" />
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Экспорт в JSON" onAction="#exportData"/>
+        <Button text="Импорт из JSON" onAction="#importData"/>
+    </HBox>
+    <HBox alignment="CENTER_RIGHT" spacing="15.0" VBox.vgrow="ALWAYS">
+        <Button onAction="#close" text="Закрыть" />
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </HBox>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

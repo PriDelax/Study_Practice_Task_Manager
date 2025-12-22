@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.PieChart?>
+<VBox maxHeight="600.0" maxWidth="800.0" minHeight="400.0" minWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.StatisticsController">
+
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Статистика задач" />
+    <PieChart fx:id="priorityPieChart" minHeight="250" prefHeight="250"/>
+    <Label fx:id="totalLabel" text="Общее количество задач: 0" />
+    <Label fx:id="doneLabel" text="Завершено: 0" />
+    <Label fx:id="overdueLabel" text="Просрочено: 0" />
+    <Label fx:id="averageTimeLabel" text="Среднее время выполнения: 0"/>
+    <Button alignment="CENTER_RIGHT" onAction="#close" text="Закрыть" />
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
